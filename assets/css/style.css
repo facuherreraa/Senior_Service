@@ -107,6 +107,9 @@ h6 {
 .navbar li {
   position: relative;
 }
+.navbar .ul .li  .a .Suscribite{
+  color: #ff0000;
+}
 
 .navbar a,
 .navbar a:focus {
