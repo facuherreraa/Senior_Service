@@ -70,42 +70,47 @@
           <div class="col-lg-6 order-1 order-lg-2">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>¿Quién somos?</h3>
+            <h3>suscribcción</h3>
             <p class="fst-italic">
-              somos una organizacios sin fines de lucro.</p>
+                Nos complace ofrecerte la opción de suscripción mensual para recibir información sobre nuestras actividades y eventos. Al suscribirte, te mantendremos al tanto de todas las novedades, talleres, excursiones, eventos culturales y deportivos, y otras oportunidades de diversión que ofrecemos para personas adultas de todas las edades, géneros y niveles de poder adquisitivo.
+            </p>
               <p class="fst-italic">
-              La cual buscamos romper barreras y estereotipos que limitan la diversión de las personas adultas, fomentando la inclusión y la igualdad de oportunidades. Trabajamos para ofrecer una amplia gama de actividades, como talleres, excursiones, eventos culturales, deportivos y de entretenimiento, adaptadas a los diferentes intereses y necesidades de las personas adultas.
+                Como suscriptor, recibirás regularmente un boletín informativo por correo electrónico que contendrá detalles sobre las próximas actividades y eventos, así como información adicional sobre recursos, consejos de entretenimiento y artículos relacionados con el bienestar y la diversión para personas adultas.
             </p>
             <p class="fst-italic">
-            Además, colaboramos con otros organismos y empresas para garantizar el acceso a estas actividades, independientemente de la situación económica de los participantes. Nuestro enfoque se centra en crear una comunidad vibrante y acogedora, donde todos los adultos puedan disfrutar plenamente de su tiempo libre y encontrar un sentido de pertenencia.
+                La suscripción mensual nos permite mantenerte conectado(a) con nuestra comunidad y asegurarte de no perderte ninguna oportunidad de diversión. Para suscribirte, simplemente proporciona tu dirección de correo electrónico a través de nuestro sitio web o en nuestras oficinas, y comenzarás a recibir nuestra información mensual de inmediato.
             </p>
             <p class="fst-italic">
-            Asimismo, nos esforzamos por concienciar a la sociedad sobre la importancia de proporcionar oportunidades de diversión y entretenimiento a las personas adultas, promoviendo la eliminación de prejuicios y estigmas asociados a la edad. Trabajamos en colaboración con instituciones públicas y privadas para influir en políticas y programas que respalden y fomenten la diversión inclusiva para todas las personas adultas.
+                Agradecemos tu interés en nuestra organización y esperamos poder brindarte una experiencia de diversión y entretenimiento enriquecedora.            
             </p>
 
           </div>
         </div>
+        <br>
+        <button onclick="solicitarEmail()">Suscribirse</button>
 
+        <script>
+            function solicitarEmail() {
+              var email = prompt("Por favor, introduce tu dirección de correo electrónico:");
+              
+              if (email !== null) {
+                if (validarEmail(email)) {
+                  alert("¡Gracias por suscribirte! Pronto recibirás nuestro boletín informativo mensual.");
+                } else {
+                  alert("Por favor, introduce una dirección de correo electrónico válida.");
+                }
+              }
+            }
+        
+            function validarEmail(email) {
+              var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              return regex.test(email);
+            }
+          </script>
       </div>
       <br>
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>¿Qué hacemos?</h3>
-            <p class="fst-italic">
-             Contamos con varias campañas para mantener a los adultos mayores activos tambien contamos con alianzas no lucrativas. 
-            </p>
-
-          </div>
-        </div>
-        
-
-      </div>
       
+    
       
     </section><!-- End Story Intro Section -->
 
@@ -122,6 +127,7 @@
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Senior Service</span></strong>. Todos los derechos reservados.
+        <p>U.A.D.E</p>
       
   </footer><!-- End Footer -->
 
