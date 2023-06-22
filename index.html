@@ -105,6 +105,49 @@
       </div>
     </section><!-- End My & Family Section -->
 
+    <title>Carrusel de Logos</title>
+  <style>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .carousel img {
+      max-width: 100px;
+      max-height: 100px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Marcas que auspician nuestro proyecto</h2>
+
+  <div class="carousel">
+    <img src="assets/img/sponsors/uade.jpg" alt="Logo 1">
+    <img src="assets/img/sponsors/buenosairesciudad.webp" alt="Logo 2">
+    <img src="assets/img/sponsors/cruzroja.jpg" alt="Logo 3">
+    <img src="assets/img/sponsors/malba.png" alt="Logo 4">
+ 
+  </div>
+
+  <script>
+    var carousel = document.querySelector('.carousel');
+    var images = carousel.getElementsByTagName('img');
+    var totalImages = images.length;
+    var currentIndex = 0;
+
+    function mostrarSiguiente() {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex + 1) % totalImages;
+      images[currentIndex].style.display = 'inline-block';
+    }
+
+    setInterval(mostrarSiguiente, 3000); // Cambiar de imagen cada 3 segundos (puedes ajustar este valor)
+  </script>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
